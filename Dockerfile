@@ -16,6 +16,12 @@ ENV NODE_ENV production
 
 WORKDIR /usr/src/app
 
+# Update CA certificates
+RUN apk update && apk add --no-cache ca-certificates
+
+# Optionally configure npm to skip SSL certificate verification
+# RUN npm config set strict-ssl false
+
 # Download dependencies as a separate step to take advantage of Docker's caching.
 # Leverage a cache mount to /root/.npm to speed up subsequent builds.
 # Leverage a bind mounts to package.json and package-lock.json to avoid having to copy them into
