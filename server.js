@@ -4,6 +4,8 @@ const path = require('path');
 const multer = require('multer');
 const app = express();
 
+require('dotenv').config();
+
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
     cb(null, 'assets/');
