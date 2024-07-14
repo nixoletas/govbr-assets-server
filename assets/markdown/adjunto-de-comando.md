@@ -1,4 +1,4 @@
-<img src="http://10.56.19.157:3000/assets/pics/adj-cmdo.png" width="200" alt="cmt"></img>
+<img src="http://10.56.19.152/assets/pics/adj-cmdo.png" width="200" alt="cmt"></img>
 
 ST CLÁUDIO ADÃO **MELGAREJO**
 
