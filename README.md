@@ -1,8 +1,8 @@
 ### Como rodar o servidor
 
 pré-requisitos
-- ter git instalado
-- ter node instalado
+- ter *git* instalado
+- ter *node* instalado
 
 clonar este repositório
 ``` git
