@@ -21,7 +21,7 @@ rodar o projeto
 node server.js
 ```
 
-depois no servidor da sua Intranet (Joomla CMS) modifique os links do arquivo 'index.html' para puxar os assets do servidor de assets ao invés das fontes Estaleiro ou FontAwesome. Exemplo:
+depois no servidor da sua Intranet (Joomla CMS) modifique os links do arquivo 'index' para puxar os assets do servidor de assets ao invés das fontes Estaleiro ou FontAwesome. Exemplo:
 ``` html
 <!doctype html>
 <html lang="pt-BR">
