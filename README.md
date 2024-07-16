@@ -1,5 +1,11 @@
 ### Como rodar o servidor
 
+clonar este repositório
+``` git
+git clone https://github.com/nixoletas/govbr-assets-server.git
+cd govbr-assets-server
+```
+
 instale as dependências do projeto
 ``` node
 npm install
