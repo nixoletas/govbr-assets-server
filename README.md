@@ -18,7 +18,7 @@ SERVER_IP=10.56.20.21
 
 rodar o projeto
 ```
-npm run start
+node server.js
 ```
 
 depois no servidor da sua Intranet (Joomla CMS) modifique os links do arquivo 'index.html' para puxar os assets do servidor de assets ao invés das fontes Estaleiro ou FontAwesome. Exemplo:
