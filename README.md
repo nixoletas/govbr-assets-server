@@ -20,3 +20,26 @@ rodar o projeto
 ```
 npm run start
 ```
+
+depois no servidor da sua Intranet (Joomla CMS) modifique os links do arquivo 'index.html' para puxar os assets do servidor de assets ao invés das fontes Estaleiro ou FontAwesome. Exemplo:
+``` html
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Intranet</title>
+    <link rel="icon" type="image/x-icon" href="http://assets-server-ip/assets/pics/logo9bcom2.png" />
+    <link
+      rel="stylesheet"
+      href="http://assets-server-ip/assets/rawline/rawline.css"
+      media="print" onload="this.media='all'" />
+    <link rel="stylesheet" href="http://assets-server-ip/assets/font-awesome/css/all.min.css" media="print" onload="this.media='all'"/>
+  </head>
+  <body>
+    <app-root></app-root>
+  </body>
+</html>
+```
