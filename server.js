@@ -21,20 +21,6 @@ app.use(cors());
 
 app.use('/assets', express.static(path.join(__dirname, 'assets')));
 
-app.post('/upload', upload.single('file'), (req, res) => {
-  res.send('Arquivo enviado com sucesso!');
-});
-
-app.get('/upload', (req, res) => {
-  res.send(`
-    <h1>Upload de Arquivo</h1>
-    <form action="/upload" method="post" enctype="multipart/form-data">
-      <input type="file" name="file" />
-      <button type="submit">Enviar</button>
-    </form>
-  `);
-});
-
 app.get('/', (req, res) => {
   res.send(`
     <h1>Servidor de Assets da Intranet</h1>
@@ -42,7 +28,8 @@ app.get('/', (req, res) => {
 });
 
 const PORT = process.env.PORT || 3000;
+const SERVER_IP = process.env.SERVER_IP || "localhost";
 
 app.listen(PORT, () => {
-  console.log(`Rodando na porta http://localhost:${PORT}`);
+  console.log(`Rodando na porta http://${SERVER_IP}:${PORT}`);
 });
