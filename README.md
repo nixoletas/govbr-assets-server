@@ -1,5 +1,9 @@
 ### Como rodar o servidor
 
+pré-requisitos
+- ter git instalado
+- ter node instalado
+
 clonar este repositório
 ``` git
 git clone https://github.com/nixoletas/govbr-assets-server.git
