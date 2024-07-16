@@ -9,7 +9,7 @@ Crie um arquivo '.env' na raiz do projeto
 ``` bash
 nano .env
 ```
-insira a porta que deseja rodar a aplicação (porta 80 recomendada devido à bloqueios de firewall) e o IP do servidor
+No arquivo '.env' insira a porta que deseja rodar a aplicação (porta 80 recomendada devido à bloqueios de firewall) e o IP do servidor
 ``` .env
 # example .env
 PORT=80
