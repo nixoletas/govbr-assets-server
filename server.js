@@ -6,17 +6,6 @@ const app = express();
 
 require('dotenv').config();
 
-const storage = multer.diskStorage({
-  destination: (req, file, cb) => {
-    cb(null, 'assets/');
-  },
-  filename: (req, file, cb) => {
-    cb(null, file.originalname);
-  }
-});
-
-const upload = multer({ storage: storage });
-
 app.use(cors());
 
 app.use('/assets', express.static(path.join(__dirname, 'assets')));
